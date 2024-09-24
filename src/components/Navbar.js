@@ -97,7 +97,7 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-            <Nav.Link href="/contact">
+            <Nav.Link as={Link} to="/contact" onClick={() => updateExpanded(false)}>
                 <FontAwesomeIcon icon={faAddressBook} style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>

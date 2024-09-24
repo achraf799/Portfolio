@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
+import { AiFillInstagram } from 'react-icons/ai';
+import { AiOutlineMail } from 'react-icons/ai'; // Import email icon
 import Particle from '../Particle';  
 
 export const ContactUs = () => {
@@ -25,14 +27,31 @@ export const ContactUs = () => {
   };
 
   return (
-    <section>
+    <section className='section-contact'>
       <Container fluid className="contact-section">
         <Container className="contact-content">
           <Row>
-            <Col md={7}>
-              <h1 className="heading">Get in Touch</h1>
+            <Col md={6}>
+              <h1 className="headingcontact">Get in Touch</h1>
 
-              {}
+              {/* Additional content */}
+              <h3>I would love to hear from you.</h3>
+              <p>I value your feedback and inquiries. Please feel free to reach out to me using the contact form.</p>
+              <p><strong className='email_me'>EMAIL ME:</strong></p>
+              
+              {/* Email icon */}
+              <li className="social-icons">
+                <a
+                  href="mailto:boudiafmouhammedachraf@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiOutlineMail />
+                </a>
+              </li>
+            </Col>
+            <Col md={6}>
               {showSuccessMessage && (
                 <Alert variant="success" onClose={() => setShowSuccessMessage(false)} dismissible>
                   Your message has been sent successfully!
@@ -62,7 +81,7 @@ export const ContactUs = () => {
             </Col>
           </Row>
         </Container>
-        <Particle /> {}
+        <Particle /> 
       </Container>
     </section>
   );
