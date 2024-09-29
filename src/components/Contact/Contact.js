@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
-import { AiFillInstagram } from 'react-icons/ai';
 import { AiOutlineMail } from 'react-icons/ai'; // Import email icon
 import Particle from '../Particle';  
 
