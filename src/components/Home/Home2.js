@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeImg2 from "../../Assets/homepic2.png"; 
+import homeImg2 from "../../Assets/homepic2.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiFillInstagram,
   AiFillFacebook,
+  AiFillBehanceSquare,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -21,7 +22,7 @@ function Home2() {
             <p className="home-about-body">
               I am a third-year computer science student at Orleans University with a passion for full-stack development and UX/UI design.
               <br />
-              <br />Over the years, I’ve honed my skills in languages like 
+              <br />Over the years, I’ve honed my skills in languages like
               <i>
                 <b className="purple"> JAVA, C++,</b> and frameworks such as <b className="purple">React, Vue.js, and Node.js. </b>
               </i>
@@ -29,7 +30,7 @@ function Home2() {
               <br />
               I am particularly interested in developing innovative
               <i>
-                <b className="purple"> web technologies</b> and creating impactful <b className="purple"> digital products.</b>  My work spans <b className="purple"> frontend and backend development,</b> where I apply modern <b className="purple">JavaScript libraries</b> and frameworks like <b className="purple">React.js and Express.js</b> to build responsive, scalable applications.
+                <b className="purple"> web technologies</b> and creating impactful <b className="purple"> digital products.</b> My work spans <b className="purple"> frontend and backend development,</b> where I apply modern <b className="purple">JavaScript libraries</b> and frameworks like <b className="purple">React.js and Express.js</b> to build responsive, scalable applications.
               </i>
               <br />
               <br />
@@ -48,7 +49,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-            <img src={homeImg2} className="img-fluid" alt="avatar" /> {/* Use homeImg2 */}
+              <img src={homeImg2} className="img-fluid" alt="avatar" /> {/* Use homeImg2 */}
             </Tilt>
           </Col>
         </Row>
@@ -59,6 +60,16 @@ function Home2() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/boudiaf-mohammed-achraf-eddine-002352229/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
               <li className="social-icons">
                 <a
                   href="https://github.com/achraf799"
@@ -81,12 +92,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/ihttps://www.linkedin.com/in/boudiaf-mohammed-achraf-eddine-002352229/n/soumyajit4419/"
+                  href="https://www.behance.net/achrafprod"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <FaLinkedinIn />
+                  <AiFillBehanceSquare />
                 </a>
               </li>
               <li className="social-icons">
@@ -106,4 +117,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
