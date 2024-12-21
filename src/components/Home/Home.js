@@ -22,7 +22,7 @@ function Home() {
                 I'M
                 <strong className="main-name"> ACHRAF PROD</strong>
               </h1>
-
+              <script id="messenger-widget-b" src="https://cdn.botpenguin.com/website-bot.js" defer>67674415b57ceddd2b27ef9c,67672a9c29c567839c9452c9</script>
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
