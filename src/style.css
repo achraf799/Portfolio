@@ -107,6 +107,12 @@ button:focus {
   opacity: 1 !important;
 }
 
+#botpenguin-container {
+  z-index: 9999 !important;
+  display: block !important;
+}
+
+
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: 0 !important;

@@ -23,6 +23,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+#botpenguin-container {
+  z-index: 9999 !important;
+  display: block !important;
+}
 
 .App-link {
   color: #61dafb;
