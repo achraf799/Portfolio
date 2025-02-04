@@ -7,20 +7,7 @@ import Type from "./Type";
 
 function Home() {
   useEffect(() => {
-    // Dynamically create and append the chatbot script
-    const script = document.createElement("script");
-    script.id = "messenger-widget-b";
-    script.src = "https://cdn.botpenguin.com/website-bot.js";
-    script.defer = true;
-    script.innerHTML = "676b3f87b57ceddd2b2831eb,67672a9c29c567839c9452c9"; // Updated bot initialization parameters
-  
-    // Append the script to the body
-    document.body.appendChild(script);
-  
-    // Cleanup function to remove the script on component unmount
-    return () => {
-      document.body.removeChild(script);
-    };
+
   }, []);
 
   return (
